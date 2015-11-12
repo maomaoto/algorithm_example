@@ -1,6 +1,11 @@
 #!/usr/bin/env python
 # coding=UTF-8
 # Ch5 三個水桶等分8公升水的問題
+# 有些函式應該是要放在bucket_state裡比較符合物件導向
+# 但實作時覺得水桶大小及最終狀態在每個bucket_state裡都需要存一份覺得浪費空間
+# 因此變成現在的樣子
+# 應該使用Static member比較適合
+
 
 BUCKETS_COUNT = 3	# number of buckets
 #state_list = []		# store bucket_state list in current search
